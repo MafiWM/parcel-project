@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: yellow;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 20px;
+    background-color: pink;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 30px;
+    background-color: lightblue;
+  }
+}

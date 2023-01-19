@@ -1,0 +1,41 @@
+.hero {
+  padding: 20px 0;
+  background-color: rgb(33, 33, 222);
+  @media screen and (min-width: 768px) {
+    padding: 40px 0;
+    background-color: purple;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+    background-color: lightgreen;
+  }
+
+  &_title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    @include font(30px, null, rgb(0, 139, 0), 1.14, 0.02em);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      @include font(40px, 500, rgb(21, 0, 139), 1.14, 0.03em);
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
+      @include font(60px, 700, darkred, 1.14, 0.04em);
+    }
+  }
+  &_text {
+    @include font(14px, null, rgb(139, 0, 139), 1.14, null);
+
+    @media screen and (min-width: 768px) {
+      @include font(18px, null, rgb(137, 139, 0), 1.14, null);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include font(20px, 500, rgb(139, 51, 0), 1.14, null);
+    }
+  }
+}
