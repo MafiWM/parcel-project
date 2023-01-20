@@ -1,7 +1,6 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
     --bg-btn: #0A8817;
-    --hover-focus: #0A8817;
+    --hover-focus:#0A8817;
     --bg-section-green: #84A278;
     --bg-item-modal: #9CBE8F;
     --bg-lightgreen: #AEC6A5;
@@ -11,12 +10,10 @@
     --bg-white: #FCFCFC;
     --bg-disabled: #ABABAB;
     --bg-placeholder: rgba(248, 210, 78, 0.1);
-    --text-black: #131313;
-    --tetx-white: #FCFCFC;
-    --text-btn: #000000;
+    --text-black:#131313;
+    --tetx-white:#FCFCFC;
+    --text-btn:#000000;
     --tex-footer-color: #7A7A7A;
-    --footer-stroke-color: #E1E1E1;
-    --text-white-color: #FFFFFF;
+    --footer-stroke-color:#E1E1E1;
+    --text-white-color:#FFFFFF;
 }
-
-  
