@@ -6,20 +6,24 @@
   height: 100%;
 }
 
-
-
-.modal-buynow-ul{
-  margin-top: 86px;
-  margin-bottom: 32px;
-}
-
 .modal-buynow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   max-width: 280px;
+
+  padding-top: 28px;
+  padding-bottom: 29px;
+}
+
+.modal-buynow-ul{
+  margin-top: 86px;
+  margin-bottom: 32px;
 }
 
 .modal-li{
@@ -138,11 +142,13 @@
 // **************** form ********************
 
 .modal-input{
+  display: block;
   padding: 8px 12px;
 
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84A178;
   border-radius: 10px;
+
 
   font-family: "Montserra", sans-serif;
   font-size: 12px;
@@ -152,4 +158,22 @@
 
 .modal-input + .modal-input{
   margin-top: 12px;
+}
+
+.modal-buynow-btn{
+  display: block;
+  padding: 12px 34px;
+  margin-top: 26px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Montserra", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--text-black);
+
+  background: var(--bg-yellow);
+  border-radius: 10px;
+  border: none;
 }
