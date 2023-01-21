@@ -1,5 +1,5 @@
 <section class="gallery-rewiews">
-    <h2 class="hidden">Gallery and rewiews</h2>
+    <h2 class="visually-hidden">Gallery and rewiews</h2>
     <div class="container gallery-rewiews-container swiper mySwiperGallery">
         <div class="gallery swiper-wrapper">
             <picture class="gallery-item swiper-slide">
@@ -171,32 +171,3 @@
 </section>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-
-<script>
-    var swiper = new Swiper(".mySwiperGallery", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-
-<script>
-    var swiper = new Swiper(".mySwiperRewiews", {
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-</script>
