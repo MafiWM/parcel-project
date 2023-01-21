@@ -7,6 +7,11 @@
 }
 
 
+
+.modal-buynow-ul{
+  margin-top: 86px;
+}
+
 .modal-buynow{
   position: absolute;
   top: 50%;
@@ -16,6 +21,35 @@
   max-width: 280px;
 }
 
+.modal-li{
+  display: block;
+  position: relative;
+  width: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.modal-li + .modal-li{
+  margin-top: 84px;
+}
+
+.ellips{
+  position: relative;
+  bottom: 50px;
+  width: 132px;
+  height: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: -2px;
+}
+
+.ice-cream-li{
+  border: 2px solid #96AF8C;
+}
+
 .modal-buynow-main-title{
   font-family: "Seymour One", sans-serif;
   text-align: center;
@@ -23,33 +57,46 @@
   color: var(--text-black);
 }
 
-.ellips{
-  width: 132px;
-  height: 132px;
-  margin-left: auto;
-  margin-right: auto;
+.modal-shift{
+  position: relative;
+  bottom: 7px;
 }
 
 .ice-cream{
+  // position: relative;
+  // bottom: 7px;
   width: 132px;
   height: 132px;
   background-image: url(../images/modal-buy-ice-cream-mobile.png);
 }
 
 .ice-coffee{
+  // position: relative;
+  // bottom: 7px;
   width: 132px;
   height: 132px;
   background-image: url(../images/modal-buy-ice-coffee-mobile.png);
 }
 
 .milkshake{
+  // position: relative;
+  // bottom: 7px;
   width: 132px;
   height: 132px;
   background-image: url(../images/modal-buy-milkshake-mobile.png);
 }
 
 .modal-buynow-title{
+  position: relative;
+  bottom: 20px;
+  color: var(--text-black);
+  font-family: "Montserra", sans-serif;
+  text-transform: uppercase;
   text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
 }
 
 .modal-input{
