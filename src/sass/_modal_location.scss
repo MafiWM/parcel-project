@@ -1,0 +1,165 @@
+.backdrop-location {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  // background-color: rgba(46, 47, 66, 0.4);
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--bg-white);
+  border: 2px solid var(--bg-yellow);
+  border-radius: 10px;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+//    .backdrop-location.is-hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     pointer-events: none;
+//   }
+
+//   .modal-location {
+//     position: absolute;
+
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   width: 100%;
+
+//     background-color: var(--bg-white);
+//     border: 2px solid var(--bg-yellow);
+// border-radius: 10px;
+
+//   }
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+
+  background-color: transparent;
+  padding: 0;
+}
+
+.modal-close-btn-icon {
+  fill: var(--text-black);
+}
+
+.modal-location-title {
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Seymour One';
+  color: var(--text-black);
+}
+
+.modal-btn-map {
+  background: var(--bg-yellow);
+  border-radius: 10px;
+  border: none;
+  margin-top: 32px;
+
+  height: 42px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+
+  color: var(--text-black);
+
+  //  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-map:hover {
+  background-color: var(--hover-focus);
+}
+
+.modal-btn-map:focus {
+  background-color: var(--hover-focus);
+  color: var(--tetx-white);
+}
+
+.img-map-mob {
+  display: none;
+}
+.modal-bnt-form {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-close-btn-icon {
+    width: 11.11px;
+    height: 11.14px;
+  }
+  .img-map-dt {
+    display: none;
+  }
+  .img-map-mob {
+    display: block;
+  }
+
+  .modal-location {
+    max-width: 280px;
+    height: 365px;
+    padding: 28px 28px;
+  }
+
+  .modal-location-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .modal-btn-map {
+    border-top: 24px;
+    width: 134px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-close-btn-icon {
+    width: 13.33px;
+    height: 13.37px;
+  }
+
+  .modal-location {
+    max-width: 568px;
+    height: 458px;
+    padding: 32px 60px 32px 60px;
+  }
+
+  .modal-location-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  .modal-btn-map {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
