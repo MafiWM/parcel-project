@@ -46,24 +46,21 @@
     transform: translate(50%, -50%);
   }
   .header-mobil-menu {
-    display: flex;
-    position: fixed;
+    opacity: 0;
+    visibility: hidden;
     width: 100%;
-    height: 100%;
-    max-width: 796px;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-section-green);
-    // z-index: 1000;
-    // opacity: 0;
-    // visibility: hidden;
-    pointer-events: none;
-    overflow-y: scroll;
-    padding-bottom: 80px;
-    transform: translateX(100%);
-    transition: transform 250ms var(--timing-function),
-      opacity 250ms var(--timing-function),
-      visibility 250ms var(--timing-function);
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
   }
 
   //   .header-mobil-menu {
@@ -127,8 +124,8 @@
   }
   .header-btn-burger {
     position: absolute;
-    top: 37px;
-    right: 220px;
+    top: 29px;
+    right: 216px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -147,6 +144,8 @@
     line-height: 1.22;
     border-radius: 10px;
     padding: 12px 51px 12px 36px;
+    margin-bottom: 3px;
+    margin-top: 20px;
     min-width: 152px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -191,32 +190,22 @@
     transform: translate(50%, -50%);
   }
   .header-mobil-menu {
-    display: flex;
-    position: fixed;
+    opacity: 0;
+    visibility: hidden;
     width: 100%;
-    height: 100%;
-    max-width: 796px;
-    top: 0;
-    left: 0;
-    background-color: #84a178;
-    // z-index: 1000;
-    // opacity: 0;
-    // visibility: hidden;
-    pointer-events: none;
-    overflow-y: scroll;
-    padding-bottom: 88px;
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 1024px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
   }
-
-  //   .header-mobil-menu {
-  //     transform: translateX(0);
-  //     opacity: 1;
-  //     visibility: visible;
-  //     pointer-events: auto;
-  //   }
   .header-mobil-menu_container {
     display: flex;
     position: relative;
