@@ -1,6 +1,5 @@
 // Initialize Swiper
 
-
     var swiper = new Swiper(".mySwiperGallery", {
         spaceBetween: 30,
         centeredSlides: true,
