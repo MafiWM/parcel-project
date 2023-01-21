@@ -16,12 +16,8 @@
             prevEl: ".swiper-button-prev",
         },
     });
-
-
-
     var swiper = new Swiper(".mySwiperRewiews", {
         pagination: {
             el: ".swiper-pagination",
         },
     });
-
