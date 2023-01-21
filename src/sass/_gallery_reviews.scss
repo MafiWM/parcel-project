@@ -4,7 +4,7 @@
 
 
 @media screen and (max-width:767px) {
-    .gallery-rewiews {
+    .gallery-rewiews-container {
         background-image: url(../images/background-mobile.webp);
         background-position: center;
         background-repeat: no-repeat;
@@ -16,13 +16,13 @@
 @media screen and (min-device-pixel-ratio:2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
-    .gallery-rewiews {
+    .gallery-rewiews-container {
         background-image: url(../images/background-mobile@2x.webp);
     }
 }
 
 @media screen and (min-width:768px) {
-    .gallery-rewiews {
+    .gallery-rewiews-container {
         background-image: url(../images/background-tablet.webp);
         background-position: center;
         background-repeat: no-repeat;
@@ -34,13 +34,13 @@ screen and (min-resolution: 2dppx) {
 @media screen and (min-width:768px) and (min-device-pixel-ratio:2),
 screen and (min-width:768px) and (min-resolution: 192dpi),
 screen and (min-width:768px) and (min-resolution: 2dppx) {
-    .gallery-rewiews {
+    .gallery-rewiews-container {
         background-image: url(../images/background-tablet@2x.webp);
     }
 }
 
 @media screen and (min-width:1200px) {
-    .gallery-rewiews {
+    .gallery-rewiews-container {
         background-image: url(../images/background-desktop.webp);
         padding-bottom: 228px;
     }
@@ -49,7 +49,7 @@ screen and (min-width:768px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio:2),
 screen and (min-width: 1200px) and (min-resolution: 192dpi),
 screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    .gallery-rewiews {
+    .gallery-rewiews-container {
         background-image: url(../images/background-desktop@2x.webp);
     }
 }
