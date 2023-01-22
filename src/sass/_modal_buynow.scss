@@ -17,8 +17,14 @@
 
   max-width: 280px;
 
+  padding-left: 28px;
+  padding-right: 28px;
   padding-top: 28px;
   padding-bottom: 29px;
+
+  background: var(--bg-white);
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
 }
 
 .modal-buynow-ul{
@@ -85,6 +91,7 @@
 
 .modal-buynow-main-title{
   font-family: "Seymour One", sans-serif;
+  font-size: 16px;
   text-align: center;
   line-height: 1.5;
   color: var(--text-black);
@@ -133,10 +140,10 @@
 }
 
 .modal-input{
-  display: block;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  // display: block;
+  // width: 80%;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 // **************** form ********************
@@ -144,7 +151,7 @@
 .modal-input{
   display: block;
   padding: 8px 12px;
-
+  width: 100%;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84A178;
   border-radius: 10px;
@@ -158,6 +165,10 @@
 
 .modal-input + .modal-input{
   margin-top: 12px;
+}
+
+.modal-input:invalid{
+  border-color: red;
 }
 
 .modal-buynow-btn{

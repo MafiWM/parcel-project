@@ -25,10 +25,10 @@
     <!-- ********** form ************** -->
 
     <form clas="modal-buynow-form">
-      <input type="text" placeholder="Name" class="modal-input"/>
-      <input type="tel" placeholder="Phone" class="modal-input"/>
+      <input type="text" placeholder="Name" class="modal-input" placeholder="Name" pattern="^[a-zA-ZА-Яа-яЁё]+\s[a-zA-ZА-Яа-яЁё]+$"/>
+      <input type="tel" placeholder="Phone" class="modal-input" placeholder="Phone" pattern="[0-9]{10,12}"/>
       <textarea name="Comment" id="" cols="30" rows="3" class="modal-input" placeholder="Comment"></textarea>
-      <button type="button" class="modal-buynow-btn">Submit</button>
+      <button type="submit" class="modal-buynow-btn">Submit</button>
     </form>
   </div>
 </div>
