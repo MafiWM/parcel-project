@@ -1,0 +1,67 @@
+<div class="modal modal-frn" data-modal="8">
+  <button type="button" class="modal-close-btn js-modal-close">
+    <svg class="frn-close-icon" width="20" height="20">
+      <use href="./images/symbol-defs.svg#icon-clarity_close-line"></use>
+    </svg>
+  </button>
+
+  <p class="modal-frn-main-text">
+    Thank you for your interest in owning an Ice Cream shop
+  </p>
+  <p class="modal-frn-text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+
+  <form class="modal-frn-form">
+    <div role="group">
+      <label class="modal-frn-label">
+        <input
+          type="text"
+          class="modal-frn-input"
+          name="user-name"
+          required
+          minlength="2"
+          maxlength="15"
+          placeholder="Name"
+        />
+      </label>
+
+      <label class="modal-frn-label">
+        <input
+          type="tel"
+          class="modal-frn-input"
+          name="user-tel"
+          required
+          maxlength="13"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="modal-frn-label">
+        <input
+          type="email"
+          class="modal-frn-input"
+          name="user-email"
+          required
+          placeholder="Email"
+        />
+      </label>
+
+      <label class="modal-frn-label" for="user-text">
+        <textarea
+          name="user-text"
+          id="user-text"
+          class="modal-text"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </div>
+    <button type="submit" class="frn-submit-btn">Submit</button>
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
+<script src="./js/modal.js"></script>
