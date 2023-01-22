@@ -1,0 +1,361 @@
+/* ===================== MODAL_FORM_ICE-COFFEE ======================= */
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ============================================================ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 100;
+  overflow-y: scroll;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s all;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ============================================================== */
+
+.modal_ice-coffee {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  width: 280px;
+
+  background-color: var(--bg-white);
+  border: 2px solid var(--bg-yellow);
+}
+
+.modal_conteiner {
+  padding: 20px 28px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal_ice-coffee_close {
+  position: absolute;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal_ice-coffee_close_icon {
+  fill: var(--text-black);
+}
+
+.modal_title_ice-coffee {
+  font-family: Seymour One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+
+  margin-bottom: 20px;
+}
+
+.modal_foto_ice-coffee {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.ellipse_ice-coffee {
+  position: absolute;
+  top: 7px;
+  width: 132px;
+  height: 132px;
+  background: var(--bg-lightyellow);
+  border-radius: 50%;
+  box-shadow: 0px 3.26027px 10.726px #efe70c79;
+}
+
+.ice-coffee {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.ice-coffee_kpfc {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+  gap: 9px;
+}
+
+.foto_ice-coffee {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  background: var(--bg-lightyellow);
+  box-shadow: 0px 3px 20.726px #f8d34eaa;
+}
+
+.foto_ice-coffee_kcal {
+  position: absolute;
+  top: 0px;
+  left: 6px;
+}
+
+.foto_ice-coffee_protein {
+  position: absolute;
+  top: 0px;
+  left: 67px;
+}
+
+.foto_ice-coffee_fast {
+  position: absolute;
+  top: 0px;
+  left: 129px;
+}
+
+.foto_ice-coffee_cards {
+  position: absolute;
+  top: 0px;
+  left: 191px;
+}
+
+.foto_ice-coffee_kpfc {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+
+  padding-top: 43px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 53px;
+  height: 72px;
+  border: 2px solid var(--bg-yellow);
+  border-radius: 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+  .modal_ice-coffee {
+    width: 568px;
+  }
+  .modal_title_ice-coffee {
+    margin-bottom: 24px;
+  }
+
+  .modal_foto_ice-coffee {
+    margin-bottom: 32px;
+  }
+
+  .ellipse_ice-coffee {
+    box-shadow: 0px 5.26027px 19.726px #efe70c79;
+  }
+
+  .ice-coffee_kpfc {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+
+  .foto_ice-coffee_kpfc{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+
+    width: 65px;
+    height: 90px;
+    padding-top: 63px;
+  }
+
+  .foto_ice-coffee {
+    width: 53px;
+    height: 53px;
+  }
+
+  .foto_ice-coffee_kcal {
+    left: 6px;
+  }
+
+  .foto_ice-coffee_protein {
+    left: 91px;
+  }
+
+  .foto_ice-coffee_fast {
+    left: 176px;
+  }
+
+  .foto_ice-coffee_cards {
+    left: 261px;
+  }
+}
+
+/* ===================== MODAL_INGREDIENTS======================= */
+
+.modal_ingredients {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.modal_ingredients_title {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.list-indredients-items {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+
+  max-width: 248px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-indredients-items:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+@media screen and (min-width: 550px) {
+  .modal_ingredients {
+    margin-bottom: 48px;
+  }
+
+  .list-indredients-items {
+    max-width: 520px;
+  }
+}
+
+/* ===================== MODAL_INGREDIENTS======================= */
+
+/* ===================== MODAL_FORM_ICE-COFFEE ======================= */
+
+.model_form_ice-coffee {
+  text-align: center;
+}
+
+.model_form_ice-coffee_input {
+  outline: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+
+  padding: 11px 10.4px;
+  width: 240px;
+  height: 42px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #e7b500;
+}
+
+.model_form_ice-coffee_textarea {
+  outline: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+
+  color: var(--text-black);
+  resize: none;
+  padding: 11px 16px;
+  height: 84px;
+  width: 240px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: 1px solid #e7b500;
+}
+
+.model_form_ice-coffee_input:focus,
+.model_form_ice-coffee_textarea:focus {
+  border: 2.5px solid #f8a676;
+}
+
+.model_form_ice-coffee_input:valid {
+  border: 1px solid #e7b500;
+}
+
+.model_form_ice-coffee_input:not(:placeholder-shown):required:invalid {
+  border-color: rgba(255, 0, 0, 1);
+  color: red;
+}
+
+.form_ice-coffee_btn_submit {
+  outline: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+
+  padding: 10px 32px;
+  background-color: var(--bg-yellow);
+  border-radius: 10px;
+  border: none;
+  transition: background-color 250ms linear;
+}
+.form_ice-coffee_btn_submit:hover,
+.form_ice-coffee_btn_submit:focus {
+  background-color: #f8a676;
+}
+
+@media screen and (min-width: 550px) {
+  .model_form_ice-coffee {
+    max-width: 386px;
+  }
+
+  .model_form_ice-coffee_input {
+    padding: 11px 16px;
+    width: 368px;
+  }
+  .model_form_ice-coffee_textarea {
+    width: 368px;
+    margin-bottom: 32px;
+  }
+}
+
+/* ===================== MODAL_FORM_ICE-COFFEE ======================= */
