@@ -43,9 +43,9 @@ img {
 
 .modal_ice-coffee {
   position: absolute;
-  top: 20px;
+  top: 75%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%, -50%);
   border-radius: 10px;
   width: 280px;
 
@@ -54,7 +54,7 @@ img {
 }
 
 .modal_conteiner {
-  padding: 20px 28px;
+  padding: 28px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -169,7 +169,7 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .modal_ice-coffee {
     width: 568px;
   }
@@ -258,7 +258,7 @@ img {
   margin-bottom: 21px;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .modal_ingredients {
     margin-bottom: 48px;
   }
@@ -322,6 +322,7 @@ img {
 .model_form_ice-coffee_input:not(:placeholder-shown):required:invalid {
   border-color: rgba(255, 0, 0, 1);
   color: red;
+  background: url(../images/modal_error.svg) right 12px center no-repeat #fff;
 }
 
 .form_ice-coffee_btn_submit {
@@ -343,7 +344,7 @@ img {
   background-color: #f8a676;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .model_form_ice-coffee {
     max-width: 386px;
   }
@@ -358,4 +359,3 @@ img {
   }
 }
 
-/* ===================== MODAL_FORM_ICE-COFFEE ======================= */
