@@ -1,0 +1,202 @@
+.overlay {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+  
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible; 
+}
+  
+.modal-frn {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    border: 2px solid #F8D24E;
+    background: #fcfcfc;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 28px;
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    transition: 0.3s all;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover{
+    fill: var(--hover-focus);
+}
+
+.modal-close-btn:focus{
+    border-radius: 50%;
+    fill: var(--hover-focus);
+}
+
+
+.modal-frn-main-text {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-frn-text {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.modal-frn-label {
+    margin-bottom: 12px;
+    display: block;
+}
+
+.modal-frn-label:last-child {
+    margin-bottom: 24px;
+}
+
+.modal-frn-input {
+    font-size: 12px;
+    line-height: 140%;
+    width: 100%;
+    height: 32px;
+    padding: 8px 12px;
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-frn-input:focus{
+    outline: 1px solid var(--hover-focus);
+}
+
+input.modal-frn-input::placeholder {
+    color: var( --text-black);
+}
+
+.modal-text {
+    font-size: 12px;
+    line-height: 140%;
+    width: 100%;
+    height: 72px;
+    padding: 8px 12px;
+    resize: none;
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea.modal-text::placeholder {
+    color: var( --text-black);
+}
+
+.modal-text:focus{
+    outline: 1px solid var(--hover-focus);
+}
+
+.frn-submit-btn {
+    // font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 32px;
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    background-color: var(--bg-yellow);
+    color: var(--text-black);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.frn-submit-btn:hover{
+    background-color: var(--hover-focus);
+}
+
+.frn-submit-btn:focus{
+    color: var(--text-white-color);
+    background-color: var(--hover-focus);
+}
+
+// ------------------------DESKTOP------------------------
+
+@media screen and (min-width: 480px){
+    .modal-frn{
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .modal-frn{
+        font-family: 'Montserrat';
+        width: 568px;
+        height: 668px;
+        margin: 0 auto;
+    }
+
+    .modal-frn-main-text{
+        width: 322px;
+        height: 84px;
+        font-size: 20px;
+        line-height: 1.4;
+        margin: 0 auto 24px;
+    }
+
+    .modal-frn-text{
+        font-size: 16px;
+        line-height: 140%;
+        width: 448px;
+        margin: 0 auto 32px;
+    }
+
+    .modal-frn-form{
+        width: 368px;
+        margin: 0 auto;
+    }
+
+    .modal-frn-label {
+        margin-bottom: 16px;
+    }
+
+    .modal-frn-input{
+        height: 42px;
+    }
+
+    .modal-text{
+        height: 84px;
+    }
+
+    .modal-frn-label:last-child {
+        margin-bottom: 32px;
+    }
+}
