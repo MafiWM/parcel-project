@@ -135,7 +135,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .rewiews-box-text {
-    background-color: #84A178;
+    background-color: var(--bg-section);
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
@@ -173,7 +173,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     letter-spacing: 0.04em;
-    color: #FCFCFC;
+    color: var(--tetx-white);
 }
 
 @media screen and (max-width:767px) {
@@ -205,7 +205,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     font-weight: 500;
     line-height: 1.86;
     text-align: center;
-    color: #131313;
+    color: var(--text-black);
 }
 
 @media screen and (max-width:767px) {
@@ -270,7 +270,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #84A178;
+    background-color: var(--bg-section);
 }
 
 /* ====================/REWIEWS-SLIDE=========== */
