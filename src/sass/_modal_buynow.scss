@@ -167,7 +167,7 @@
   margin-top: 12px;
 }
 
-.modal-input:invalid{
+.modal-input:not(:placeholder-shown):required:invalid{
   border-color: red;
 }
 
