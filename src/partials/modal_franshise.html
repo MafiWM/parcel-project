@@ -27,6 +27,8 @@
           minlength="2"
           maxlength="15"
           placeholder="Name"
+          pattern="[a-zA-Zа-яА-ЯіІїЇ]+$"
+          title="Only letters"
         />
       </label>
 
@@ -38,6 +40,8 @@
           required
           maxlength="13"
           placeholder="Phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Only numbers XXX-XXX-XXXX"
         />
       </label>
 
