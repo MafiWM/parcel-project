@@ -63,6 +63,10 @@
   padding: 0;
 }
 
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--hover-focus);}
+
 .modal-close-btn-icon {
   fill: var(--text-black);
 }
