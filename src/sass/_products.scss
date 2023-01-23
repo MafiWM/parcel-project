@@ -1,9 +1,8 @@
-
 .section {
   background-image: url(../images/background-mobile.webp);
-  //   background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -73,7 +72,6 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  // box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .cream {
@@ -174,11 +172,6 @@
 }
 
 @media screen and (min-width: 480px) {
-  //   .container {
-  //     width: 480px;
-  //     margin: 0 auto;
-  //   }
-
   .products-card-descr {
     height: 428px;
     margin: 0 auto;
@@ -196,12 +189,6 @@
       background-image: url(../images/background-tablet@2x.webp);
     }
   }
-  //   .container {
-  //     width: 768px;
-  //     padding-left: 32px;
-  //     padding-right: 32px;
-  //   }
-
   .natural {
     font-size: 22px;
     line-height: 1.23;
@@ -259,11 +246,6 @@
       background-image: url(../images/background-desktop@2x.webp);
     }
   }
-  //   .container {
-  //     width: 1200px;
-  //     padding-left: 16px;
-  //     padding-right: 16px;
-  //   }
 
   .natural {
     font-size: 30px;
