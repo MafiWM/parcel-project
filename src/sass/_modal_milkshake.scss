@@ -50,6 +50,7 @@ img {
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
+  z-index: 100;
 
   background-color: var(--bg-white);
   border: 2px solid var(--bg-milkshakes);
