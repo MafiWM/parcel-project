@@ -1,5 +1,4 @@
 // ----------MOBILE----------
-
 .section-advantages {
   background-color: var(--bg-section-green);
   padding-bottom: 81px;
@@ -80,6 +79,7 @@
 
 @media screen and (min-width: 1200px) {
   .section-advantages {
+    margin: 0 auto;
     padding-bottom: 178px;
   }
   .advantages-list {
