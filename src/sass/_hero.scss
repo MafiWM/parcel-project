@@ -1,5 +1,20 @@
 /* --------- HERO -------- */
 
+.top-scroll {
+    position: fixed;
+    z-index: 99;
+    right: 5%;
+    bottom: 2%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 15 3 #d6936d;
+    border-radius: 50%;
+    background-image: url(../images/top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;   
+}
+
 .hero_section {
     background-color: var(--bg-section);
 }
@@ -155,6 +170,13 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .top-scroll {
+        width: 50px;
+        height: 50px;
+        background-size: 38px;
+        }
+
     .hero_section {
         padding-top: 14px;
     }
@@ -360,4 +382,21 @@
         width: 456px;
         height: 560px;
     }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ice_cream_plate-wrap {
+    animation-name: rotation;
+    animation-duration: 4000ms;
+    animation-timing-function: cubic-bezier(.46, .13, .33, 1.02);
+    animation-iteration-count: infinite;
 }
