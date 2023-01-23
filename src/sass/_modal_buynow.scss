@@ -225,8 +225,12 @@
   margin-top: 12px;
 }
 
+.modal-input:valid{
+  background: rgba(248, 210, 78, 0.1);
+}
+
 .modal-input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  background-color: rgba(255, 0, 0, 0.25);
 }
 
 .modal-buynow-btn {
