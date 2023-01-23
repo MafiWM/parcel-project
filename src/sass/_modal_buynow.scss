@@ -51,6 +51,10 @@
   transition: box-shadow var(--transition-type), background-color var(--transition-type);
 }
 
+// .close-btn:hover{
+//   background-color: var();
+// }
+
 /*===== checkbox =============*/
 .checkbox{
   position: absolute;
@@ -72,6 +76,13 @@
 .checkbox:checked + .checked-milkshake{
   background-color: var(--bg-milkshakes);
 }
+
+.checkbox:focus{
+  border: none;
+  outline: none;
+}
+
+
 
 /*============= eng checkbox ================*/
 
