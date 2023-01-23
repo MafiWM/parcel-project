@@ -1,0 +1,357 @@
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+
+.svg-close {
+    width: 11.11px;
+    height: 11.14px;
+    background: var(--tetx-white);
+    border: none;
+}
+
+.thumb {
+    width: 132px;
+    height: 132px;
+    border: 1px solid var(--bg-item-modal);
+    background-color: var(--bg-item-modal);
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+}
+
+.icecream {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -7px;
+}
+
+.list-enerdgy {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+    margin-top: 0;
+    gap: 9px;
+}
+
+.list-enerdgy-items {
+    text-align: center;
+    width: 53px;
+    height: 72px;
+    border: 2px solid var(--bg-item-modal);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity-enerdgy {
+    display: flex;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    border: 2px solid var(--bg-item-modal);
+    border-radius: 50%;
+    justify-content: center;
+    margin-bottom: 7px;
+    background: var(--bg-item-modal);
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    margin-top: -1px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;
+}
+
+.enerdgy-title {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.ingredients-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.list-ingredients {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.list-ingredients-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+
+.list-ingredients-items:last-child {
+    margin-bottom: 0;
+}
+
+.text-igredients {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+}
+
+.label {
+    margin-bottom: 16px;
+}
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.modal-icecrem {
+    opacity: 0;
+    visibility: hidden;
+    border: 2px solid var(--bg-yellow);
+    background: var(--tetx-white);
+    border-radius: 10px;
+    max-width: 280px;
+    max-height: 968px;
+    left: 50%;
+    top: 50%;
+    padding: 28px 20px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    transition: 0.3s all;
+}
+
+.close-modal {
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: var(--tetx-white);
+}
+
+.close-modal:hover {
+    background-color: var(--bg-ocean-close);
+    fill: var(--bg-color);
+}
+
+.form-modal-title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    width: 142px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 240px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input:valid {
+    background: rgba(248, 210, 78, 0.1);
+}
+
+.input:not(:placeholder-shown):required:invalid {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.textarea-modal-form:focus,
+.input:focus {
+    border: 1px solid var(--hover-focus);
+}
+
+.input {
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 100%;
+    height: 40px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--bg-section-green);
+    border-radius: 10px;
+    padding: 11px 16px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-modal-form {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    resize: none;
+    width: 100%;
+    height: 84px;
+    padding: 11px 16px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--bg-section-green);
+    border-radius: 10px;
+}
+
+.input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.label-textarea {
+    margin-bottom: 28px;
+}
+
+.textarea-modal-form:focus {
+    outline-style: none;
+    
+}
+
+.send-form-btn {
+    background: var(--bg-yellow);
+    border-radius: 10px;
+    align-self: center;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    width: 132px;
+    height: 42px;
+    padding: 12px 34px;
+    border: none;
+    color: var(--text-black);
+    cursor: pointer;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.send-form-btn:hover,
+.send-form-btn:focus,
+.send-form-btn:active {
+    background-color: var(--bt-color);
+}
+
+@media screen and (min-width: 768px),
+(min-width:1200px) {
+    .svg-close {
+        width: 13.33px;
+        height: 13.37px;
+    }
+
+    .thumb {
+        width: 132px;
+        height: 132px;
+        border: 1px solid var(--bg-item-modal);
+        background-color: var(--bg-item-modal);
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+
+    .list-enerdgy {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        list-style: none;
+        margin-top: 0;
+    }
+
+    .list-enerdgy-items {
+        width: 65px;
+        height: 90px;
+    }
+
+    .quantity-enerdgy {
+        width: 53px;
+        height: 53px;
+        font-size: 12px;
+        line-height: 2.3;
+    }
+
+    .enerdgy-title {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .list-ingredients-items {
+        width: 488px;
+    }
+    .label {
+        margin-bottom: 16px;
+    }
+   .modal-icecrem {
+        min-width: 568px;
+        min-height: 996px;
+        padding: 32px 38px;
+    }
+
+    .form-modal-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    .modal-form {
+        max-width: 368px;
+    }
+
+    .send-form-btn {
+        width: 121px;
+        height: 42px;
+    }
+
+    .send-form-btn:hover,
+    .send-form-btn:focus,
+    .send-form-btn:active {
+        background-color: var(--bt-color);
+    }
+}

@@ -1,0 +1,81 @@
+<div class="modal modal-icecrem" data-modal="3">
+
+    <button class="close-modal js-modal-close">
+        <svg class="svg-close">
+            <use href="/src/images/symbol-defs.svg#icon-cross-modal"></use>
+        </svg>
+    </button>
+
+    <p class="form-modal-title">
+        Chololate icecream
+    </p>
+    <div class="thumb">
+        <img srcset="/src/images/icecrem2x.png 2x" src="/src/images/icecrem.png" width="132" height="132" class="icecream" alt="Chololate icecream">
+    </div>
+    <div>
+        <ul class="list-enerdgy">
+            <li class="list-enerdgy-title">
+                <div class="list-enerdgy-items">
+                    <span class="quantity-enerdgy">320</span>
+                    <span class="enerdgy-title">kcal</span>
+                </div>
+            </li>
+            <li class="list-enerdgy-title">
+                <div class="list-enerdgy-items">
+                    <span class="quantity-enerdgy">4g</span>
+                    <span class="enerdgy-title">Protein...</span>
+                </div>
+            </li>
+
+            <li class="list-enerdgy-title">
+                <div class="list-enerdgy-items">
+                    <span class="quantity-enerdgy">8,2g</span>
+                    <span class="enerdgy-title">Fats</span>
+                </div>
+            </li>
+
+            <li class="list-enerdgy-title">
+                <div class="list-enerdgy-items">
+                    <span class="quantity-enerdgy">40,4g</span>
+                    <span class="enerdgy-title">Carbs</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h3 class="ingredients-title">Ingredients</h3>
+    <div>
+        <ul class="list-ingredients">
+            <li class="list-ingredients-items"><span class="text-igredients">Milk</span><span
+                    class="text-igredients">100ml</span></li>
+            <li class="list-ingredients-items"><span class="text-igredients">Belgian chocolate</span><span
+                    class="text-igredients">20g</span></li>
+            <li class="list-ingredients-items"><span class="text-igredients">Cream</span><span
+                    class="text-igredients">150ml</span></li>
+            <li class="list-ingredients-items"><span class="text-igredients">Cocoa powder</span><span
+                    class="text-igredients">30g</span></li>
+            <li class="list-ingredients-items"><span class="text-igredients">Sugar</span><span
+                    class="text-igredients">40g</span></li>
+            <li class="list-ingredients-items"><span class="text-igredients">Vanilla sugar</span><span
+                    class="text-igredients">10g</span></li>
+        </ul>
+    </div>
+    <form class="modal-form">
+        <label class="label">
+            <span class="input-cover">
+                <input class="input" type="text" name="name" required pattern="[a-zA-Zа-яА-ЯіІїЇ]+$" minlength="2"
+                    title="only letters" placeholder="Name" />
+            </span>
+        </label>
+        <label class="label">
+            <span class="input-cover">
+                <input class="input" type="tel" name="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    title="only numbers XXX-XXX-XXXX" placeholder="Phone" />
+            </span>
+        </label>
+        <label class="label-textarea"><textarea class="textarea-modal-form" name="comment"
+                placeholder="Comment"></textarea>
+        </label>
+        <button class="send-form-btn" type="submit">Submit</button>
+    </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
