@@ -1,40 +1,23 @@
-*,
-*::before,
-*::after {
+ .footer-cave{
   box-sizing: border-box;
 }
 
-a {
+.footer-cave >a {
   text-decoration: none;
   color: inherit;
 }
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.footer-cave >p, .footer-cave >h3
+{
   margin: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
-ul,
-ol {
+.footer-cave >ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* common styles for all devices */
 
