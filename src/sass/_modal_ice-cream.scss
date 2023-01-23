@@ -139,8 +139,7 @@ button {
     border: 2px solid var(--bg-yellow);
     background: var(--tetx-white);
     border-radius: 10px;
-    max-width: 280px;
-    max-height: 968px;
+    height: 100%;
     left: 50%;
     top: 50%;
     padding: 28px 20px;
@@ -150,6 +149,7 @@ button {
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
     text-align: center;
     transition: 0.3s all;
+    overflow-y: scroll;
 }
 
 .close-modal {
@@ -170,19 +170,26 @@ button {
     background-color: var(--bg-ocean-close);
     fill: var(--bg-color);
 }
-
 .form-modal-title {
     font-family: 'Seymour One';
     font-weight: 400;
-    width: 142px;
-    height: 56px;
     font-size: 20px;
     line-height: 1.4;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width:767px) {
+    .form-modal-title {
+        max-width: 280px;
+            width: 142px;
+            height: 56px;
+            margin-bottom: 20px;  
+        }
+            .modal-icecrem {
+                    max-width: 280px;
+            }
 }
 
 .modal-form {
@@ -328,14 +335,13 @@ button {
         margin-bottom: 16px;
     }
    .modal-icecrem {
-        min-width: 568px;
-        min-height: 996px;
+        max-width: 568px;
         padding: 32px 38px;
-    }
+}
 
     .form-modal-title {
-        font-weight: 700;
-        font-size: 16px;
+        font-weight: 400;
+        font-size: 20px;
         line-height: 1.5;
         margin-bottom: 24px;
     }
