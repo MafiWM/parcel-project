@@ -14,7 +14,6 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
   pointer-events: auto;
 }
 .container {
@@ -62,7 +61,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  transform: translate(-50%, -50%);
   z-index: 30;
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -91,6 +89,12 @@
   border: none;
   cursor: pointer;
   fill: #fff;
+}
+.header-logo-menu {
+  position: absolute;
+  fill: #f8d24e;
+  top: 0;
+  left: 0;
 }
 .header-mobil-menu-nav {
   margin-left: auto;
