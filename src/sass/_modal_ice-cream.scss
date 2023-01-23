@@ -156,11 +156,12 @@
     height: 24px;
     border: none;
     background-color: var(--tetx-white);
+    cursor: pointer;
 }
 
 .close-modal:hover {
-    background-color: var(--bg-ocean-close);
-    fill: var(--bg-color);
+    
+    fill: var(--hover-focus);
 }
 .form-modal-title {
     font-family: 'Seymour One';
@@ -272,9 +273,11 @@
 .send-form-btn:hover,
 .send-form-btn:focus,
 .send-form-btn:active {
-    background-color: var(--bt-color);
+    background-color: var(--hover-focus);
 }
-
+.send-form-btn:focus {
+    color: var(--text-white-color);
+}
 @media screen and (min-width: 768px),
 (min-width:1200px) {
     .svg-close {
@@ -350,6 +353,7 @@
     .send-form-btn:hover,
     .send-form-btn:focus,
     .send-form-btn:active {
-        background-color: var(--bt-color);
+        background-color: var(--hover-focus);
     }
+    
 }
