@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
-
+       bodyMenu = document.querySelector('.js-body-menu');
 
    /* Перебираем массив кнопок */
    modalButtons.forEach(function(item){
@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             подложке и окну чтобы показать их. */
          modalElem.classList.add('active');
          overlay.classList.add('active');
+         bodyMenu.classList.add('active');
       }); // end click
 
    }); // end foreach
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
+         bodyMenu.classList.remove('active');
       });
 
    }); // end foreach
