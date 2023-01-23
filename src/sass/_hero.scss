@@ -1,18 +1,28 @@
 /* --------- HERO -------- */
 
 .top-scroll {
+    transform: translateY(100px);
     position: fixed;
     z-index: 99;
     right: 5%;
-    bottom: 2%;
+    bottom: 3%;
     width: 35px;
     height: 35px;
     box-shadow: 0 0 15 3 #d6936d;
     border-radius: 50%;
-    background-image: url(../images/top.png);
+    background-image: url(../images/uptotop.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 28px;   
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-scroll:hover {
+    box-shadow: 0 0 15 5 #0a8817;
+}
+
+.top-scroll.show {
+transform: translateX(0);
 }
 
 .hero_section {
