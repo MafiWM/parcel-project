@@ -139,7 +139,7 @@ button {
     border: 2px solid var(--bg-yellow);
     background: var(--tetx-white);
     border-radius: 10px;
-    height: 968px;
+    height: 100%;
     left: 50%;
     top: 50%;
     padding: 28px 20px;
@@ -189,7 +189,6 @@ button {
         }
             .modal-icecrem {
                     max-width: 280px;
-                    height: 100%;
             }
 }
 
@@ -336,8 +335,7 @@ button {
         margin-bottom: 16px;
     }
    .modal-icecrem {
-        min-width: 568px;
-        min-height: 996px;
+        max-width: 568px;
         padding: 32px 38px;
 }
 
