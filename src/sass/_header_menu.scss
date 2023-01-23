@@ -188,13 +188,13 @@
     cursor: var(--cursor-spoon);
   }
   .header-mobil-menu_close-btn {
-    top: 38px;
-    right: 38px;
+    top: 32px;
+    right: 32px;
   }
   .header-mobil-menu {
     height: 1024px;
     max-width: 1199px;
-    padding: 38px;
+    padding: 20px;
   }
   .header-mobil-menu_container {
     padding: 0 192px;
@@ -238,6 +238,10 @@
   }
   .header-nav {
     display: flex;
+  }
+  .header-logo {
+    width: 60px;
+    height: 65px;
   }
   .header-iteam .link {
     font-weight: 700;
