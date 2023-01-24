@@ -56,6 +56,28 @@ img {
   border: 2px solid var(--bg-milkshakes);
 }
 
+.modal_milkshakes::-webkit-scrollbar{
+  width: 5px;
+}
+
+.modal_milkshakes::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.1);
+ 
+}
+
+.modal_milkshakes::-webkit-scrollbar-track:hover{
+  background: rgba(147, 146, 146, 0.5);
+}
+
+.modal_milkshakes::-webkit-scrollbar-thumb{
+  background: var(--bg-lightyellow);
+  border-radius: 8px;
+}
+
+.modal_milkshakes::-webkit-scrollbar-thumb:hover{
+  background: var(--bg-yellow);
+}
+
 .modal_conteiner {
   padding: 28px 20px;
   display: flex;
@@ -69,12 +91,18 @@ img {
   padding: 0;
   top: 16px;
   right: 16px;
+  cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
 .modal_milkshakes_close_icon {
   fill: var(--text-black);
+}
+
+.modal_milkshakes_close_icon:hover,
+.modal_milkshakes_close_icon:focus{
+  fill: var(--bg-milkshakes);
 }
 
 .modal_title_milkshakes {
@@ -337,6 +365,8 @@ img {
   letter-spacing: 0em;
   margin-left: 20px;
   margin-right: 20px;
+
+  cursor: var(--cursor-spoon);
 
   padding: 10px 32px;
   background-color: #f8a676;
