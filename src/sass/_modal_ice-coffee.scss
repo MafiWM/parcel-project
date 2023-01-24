@@ -41,7 +41,7 @@
 }
 
 .modal_ice-coffee::-webkit-scrollbar{
-  width: 5px;
+  width: 3px;
 }
 
 .modal_ice-coffee::-webkit-scrollbar-track{
@@ -188,6 +188,10 @@
   .modal_ice-coffee {
     width: 568px;
   }
+  .modal_ice-coffee::-webkit-scrollbar{
+    width: 5px;
+  }
+
   .modal_title_ice-coffee {
     margin-bottom: 24px;
   }
@@ -315,8 +319,6 @@
   line-height: 20px;
   letter-spacing: 0em;
 
-  cursor: var(--cursor-spoon);
-
   color: var(--text-black);
   resize: none;
   padding: 11px 16px;
@@ -351,6 +353,8 @@
   letter-spacing: 0em;
   margin-left: 20px;
   margin-right: 20px;
+
+  cursor: var(--cursor-spoon);
 
   padding: 10px 32px;
   background-color: var(--bg-yellow);

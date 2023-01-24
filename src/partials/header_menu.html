@@ -23,21 +23,25 @@
             </li>
           </ul>
         </nav>
-        <button
-          type="button"
-          class="header-mobile-menu-open js-open-modal"
-          data-modal="1"
-        >
-          <svg width="32" height="32">
-            <use href="./images/symbol-defs.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <button type="button" class="header-btn js-open-modal" data-modal="0">
-          Buy now
-          <svg class="header-btn-icon" width="12" height="12">
-            <use href="./images/symbol-defs.svg#button-icon-arrow-right"></use>
-          </svg>
-        </button>
+        <div class="header-btn-tablet">
+          <button
+            type="button"
+            class="header-mobile-menu-open js-open-modal"
+            data-modal="1"
+          >
+            <svg width="32" height="32">
+              <use href="./images/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="header-btn js-open-modal" data-modal="0">
+            Buy now
+            <svg class="header-btn-icon" width="12" height="12">
+              <use
+                href="./images/symbol-defs.svg#button-icon-arrow-right"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     <div class="header-mobil-menu modal" data-modal="1">
@@ -57,13 +61,13 @@
             <a href="#" class="link js-modal-close">Home</a>
           </li>
           <li class="header-mobil-menu-link">
+            <a href="#about" class="link js-modal-close">How it's made?</a>
+          </li>
+          <li class="header-mobil-menu-link">
             <a href="#products" class="link js-modal-close">Our products</a>
           </li>
           <li class="header-mobil-menu-link">
             <a href="#contacts" class="link js-modal-close">Contact</a>
-          </li>
-          <li class="header-mobil-menu-link">
-            <a href="#about" class="link js-modal-close">How it's made?</a>
           </li>
         </ul>
         <button
