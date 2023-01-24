@@ -1,7 +1,8 @@
-.section-about{}
+.section-about{
+    background-color: var(--bg-section-green);
+}
 
 .container-about {
-    background-color: var(--bg-section-green);
     display: flex;
     flex-direction: column;
     align-items: center;
