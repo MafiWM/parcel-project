@@ -104,7 +104,7 @@
   margin-bottom: 114px;
 }
 .header-mobil-menu-nav .link {
-  color: var(--bg-yellow);
+  color: var(--bg-white);
   font-weight: 700;
   font-size: 32px;
   line-height: 1.22;
@@ -112,10 +112,10 @@
   transition: color 250ms var(--timing-function);
 }
 .header-mobil-menu-nav .link:hover {
-  color: var(--hover-focus);
+  color: var(--text-black);
 }
 .header-mobil-menu-nav .link:focus {
-  color: var(--tetx-white);
+  color: var(--text-black);
 }
 .header-mobil-menu-nav .link:disabled {
   color: var(--bg-disabled);
