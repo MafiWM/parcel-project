@@ -372,7 +372,7 @@ img {
   cursor: var(--cursor-spoon);
 
   padding: 10px 32px;
-  background-color: #f8a676;
+  background-color: var(--bg-yellow);
   border-radius: 10px;
   border: none;
   transition: background-color 250ms linear;
