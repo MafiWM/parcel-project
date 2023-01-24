@@ -58,6 +58,28 @@ img {
   border: 2px solid var(--bg-yellow);
 }
 
+.modal_ice-coffee::-webkit-scrollbar{
+  width: 5px;
+}
+
+.modal_ice-coffee::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.1);
+ 
+}
+
+.modal_ice-coffee::-webkit-scrollbar-track:hover{
+  background: rgba(147, 146, 146, 0.5);
+}
+
+.modal_ice-coffee::-webkit-scrollbar-thumb{
+  background: var(--bg-lightyellow);
+  border-radius: 8px;
+}
+
+.modal_ice-coffee::-webkit-scrollbar-thumb:hover{
+  background: var(--bg-yellow);
+}
+
 .modal_conteiner {
   padding: 28px 20px;
   display: flex;
@@ -70,6 +92,7 @@ img {
   position: absolute;
   padding: 0;
   top: 16px;
+  cursor: pointer;
   right: 16px;
   border: none;
   background-color: transparent;
@@ -77,6 +100,11 @@ img {
 
 .modal_ice-coffee_close_icon {
   fill: var(--text-black);
+}
+
+.modal_ice-coffee_close_icon:hover,
+.modal_ice-coffee_close_icon:focus{
+  fill: var(--bg-yellow);
 }
 
 .modal_title_ice-coffee {
@@ -304,6 +332,8 @@ img {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
+
+  cursor: var(--cursor-spoon);
 
   color: var(--text-black);
   resize: none;
