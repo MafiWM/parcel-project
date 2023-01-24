@@ -30,7 +30,7 @@
   max-width: 568px;
 
   border: 2px solid var(--bg-yellow);
-
+  border-radius: 10px;
   transform: translate(-50%, -50%);
   z-index: 30;
 
@@ -96,7 +96,7 @@
     width: 568px;
     padding: 32px 60px;
 
-    border-radius: 10px;
+    
     border: 2px solid var(--bg-yellow);
   }
   .read-title {

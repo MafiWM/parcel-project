@@ -1,9 +1,8 @@
 .modal.active,
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
-
 
 .modal-buynow-backdrop {
   opacity: 0;
@@ -35,7 +34,7 @@
   padding-bottom: 29px;
 
   background: var(--bg-white);
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
 
   overflow-y: scroll;
@@ -56,7 +55,8 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  transition: box-shadow var(--transition-type), background-color var(--transition-type);
+  transition: box-shadow var(--transition-type),
+    background-color var(--transition-type);
 }
 
 // .close-btn:hover{
@@ -64,33 +64,31 @@
 // }
 
 /*===== checkbox =============*/
-.checkbox{
+.checkbox {
   position: absolute;
 }
 
-.border-rd{
+.border-rd {
   border: none;
   border-radius: 10px;
 }
 
-.checkbox:checked + .checked-ice-cream{
+.checkbox:checked + .checked-ice-cream {
   background-color: var(--bg-lightgreen);
 }
 
-.checkbox:checked + .checked-ice-coffee{
+.checkbox:checked + .checked-ice-coffee {
   background-color: var(--bg-lightyellow);
 }
 
-.checkbox:checked + .checked-milkshake{
+.checkbox:checked + .checked-milkshake {
   background-color: var(--bg-milkshakes);
 }
 
-.checkbox:focus{
+.checkbox:focus {
   border: none;
   outline: none;
 }
-
-
 
 /*============= eng checkbox ================*/
 
@@ -125,17 +123,32 @@
 }
 
 .cup-ice-cream {
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    var(--bg-lightgrey);
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .cup-ice-coffee {
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    var(--bg-lightgrey);
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 .cup-milkshake {
-  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    var(--bg-lightgrey);
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
@@ -144,21 +157,21 @@
 }
 
 .bg-green {
-  border: 2px solid #96AF8C;
+  border: 2px solid #96af8c;
 }
 
 .bg-yellow {
-  border: 2px solid #EFD478;
-/*    background-color: var(--bg-lightyellow);*/
+  border: 2px solid #efd478;
+  /*    background-color: var(--bg-lightyellow);*/
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
 
 .bg-brown {
-  border: 2px solid #D6936D;
+  border: 2px solid var(--bg-milkshakes);
 }
 
 .modal-buynow-main-title {
-  font-family: "Seymour One", sans-serif;
+  font-family: 'Seymour One', sans-serif;
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
@@ -199,7 +212,7 @@
   position: relative;
   bottom: 20px;
   color: var(--text-black);
-  font-family: "Montserra", sans-serif;
+  font-family: 'Montserra', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -215,9 +228,9 @@
   padding: 8px 12px;
   width: 100%;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
-  font-family: "Montserra", sans-serif;
+  font-family: 'Montserra', sans-serif;
   font-size: 12px;
   color: var(--text-black);
   line-height: 140%;
@@ -227,7 +240,7 @@
   margin-top: 12px;
 }
 
-.modal-input:valid{
+.modal-input:valid {
   background: rgba(248, 210, 78, 0.1);
 }
 
@@ -242,7 +255,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-family: "Montserra", sans-serif;
+  font-family: 'Montserra', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -255,39 +268,36 @@
 
 /*  tablet   */
 
-
 @media screen and (min-width: 768px) {
-
-  .modal-buynow{
-      display: block;
-      min-width: 568px;
-      padding-top: 32px;
-      padding-bottom: 32px;
+  .modal-buynow {
+    display: block;
+    min-width: 568px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
-  .modal-buynow-ul{
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      margin-bottom: 40px;
+  .modal-buynow-ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
   }
 
-  .modal-li{
-      margin: 0;
+  .modal-li {
+    margin: 0;
   }
 
   .modal-li + .modal-li {
-      margin: 0;
+    margin: 0;
   }
 
-
-  .modal-input{
-      max-width: 368px;
-      margin-left: auto;
-      margin-right: auto;
+  .modal-input {
+    max-width: 368px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .modal-input + .modal-input{
-      margin-top: 16px;
+  .modal-input + .modal-input {
+    margin-top: 16px;
   }
 }

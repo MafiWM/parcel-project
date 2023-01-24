@@ -24,7 +24,7 @@
   margin-right: auto;
 }
 .header {
-  background-color: #84a178;
+  background-color: var(--bg-section);
 }
 .header-main {
   padding-top: 12px;
@@ -32,7 +32,7 @@
   position: relative;
 }
 .header-logo {
-  fill: #f8d24e;
+  fill: var(--bg-yellow);
 }
 .header-site-nav {
   display: none;
@@ -41,18 +41,16 @@
   display: none;
 }
 .header-mobile-menu-open {
-  position: absolute;
-  top: 17px;
-  right: 20px;
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
   cursor: pointer;
-  fill: #fff;
+  fill: var(--text-white-color);
 }
+
 .header-mobil-menu {
-  background-color: #84a178;
+  background-color: var(--bg-section);
   opacity: 0;
   visibility: hidden;
   width: 100%;
@@ -89,13 +87,18 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  fill: #fff;
+  fill: var(--text-white-color);
 }
 .header-logo-menu {
   position: absolute;
-  fill: #f8d24e;
+  fill: var(--bg-yellow);
   top: 0;
   left: 0;
+}
+.header-main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-mobil-menu-nav {
   margin-left: auto;
@@ -104,7 +107,7 @@
   margin-bottom: 114px;
 }
 .header-mobil-menu-nav .link {
-  color: #f8d24e;
+  color: var(--bg-white);
   font-weight: 700;
   font-size: 32px;
   line-height: 1.22;
@@ -112,32 +115,38 @@
   transition: color 250ms var(--timing-function);
 }
 .header-mobil-menu-nav .link:hover {
-  color: #0a8817;
+  color: var(--text-black);
 }
 .header-mobil-menu-nav .link:focus {
-  color: #fcfcfc;
+  color: var(--text-black);
 }
 .header-mobil-menu-nav .link:disabled {
-  color: #ababab;
+  color: var(--bg-disabled);
 }
 .header-mobil-menu-link:not(:last-child) {
   padding-bottom: 32px;
 }
 .header-btn-mobil {
-  background-color: #f8d24e;
-  color: #000000;
+  position: relative;
+  background-color: var(--bg-yellow);
+  color: var(--text-btn);
   text-align: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   border-radius: 10px;
-  padding: 12px 36px;
+  padding: 12px 51px 12px 36px;
   min-width: 152px;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   margin-bottom: 88px;
   cursor: var(--cursor-spoon);
+}
+.header-btn-icon {
+  position: absolute;
+  top: 15px;
+  right: 35px;
 }
 
 .header-btn:focus {
@@ -160,6 +169,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .header-logo,
+  .header-logo-menu {
+    width: 48px;
+    height: 44px;
+  }
 }
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -171,16 +185,17 @@
   .header-btn-mobil {
     display: none;
   }
+  .header-btn-tablet {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
   .header-main {
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .header-main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
   .header-mobile-menu-open {
     top: 29px;
     right: 182px;
@@ -190,19 +205,25 @@
     align-items: center;
   }
   .header-btn {
-    background-color: #f8d24e;
-    color: #000000;
+    position: relative;
+    background-color: var(--bg-yellow);
+    color: var(--text-btn);
     text-align: center;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     border-radius: 10px;
-    padding: 12px 36px;
+    padding: 12px 51px 12px 36px;
     min-width: 152px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
     cursor: var(--cursor-spoon);
+  }
+  .header-btn-icon {
+    position: absolute;
+    top: 15px;
+    right: 35px;
   }
   .header-btn-mobil:focus {
     background-color: var(--hover-focus);
@@ -251,9 +272,7 @@
   .header-mobil-menu {
     display: none;
   }
-  .header-main-nav {
-    align-items: center;
-  }
+
   .header-nav {
     gap: 308px;
     align-items: center;
@@ -264,7 +283,14 @@
     align-items: center;
   }
   .header-btn {
+    position: relative;
     display: block;
+    padding: 12px 51px 12px 36px;
+  }
+  .header-btn-icon {
+    position: absolute;
+    top: 15px;
+    right: 35px;
   }
   .header-nav {
     display: flex;
@@ -277,12 +303,12 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    color: #fcfcfc;
+    color: var(--tetx-white);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-iteam .link:hover,
   .header-iteam .link:focus {
-    color: #f8d24e;
+    color: var(--bg-yellow);
     display: block;
     transform: scale(1.25);
   }

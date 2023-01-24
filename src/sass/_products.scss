@@ -1,9 +1,8 @@
-
 .section {
   background-image: url(../images/background-mobile.webp);
-  //   background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -73,7 +72,6 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  // box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .cream {
@@ -86,7 +84,7 @@
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)
     ),
-    #d9d9d9;
+    var(--bg-lightgrey);
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
@@ -100,7 +98,7 @@
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
-    #d9d9d9;
+    var(--bg-lightgrey);
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
@@ -114,7 +112,7 @@
       rgba(213, 117, 63, 0.7),
       rgba(213, 117, 63, 0.7)
     ),
-    #d9d9d9;
+    var(--bg-lightgrey);
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -174,11 +172,6 @@
 }
 
 @media screen and (min-width: 480px) {
-  //   .container {
-  //     width: 480px;
-  //     margin: 0 auto;
-  //   }
-
   .products-card-descr {
     height: 428px;
     margin: 0 auto;
@@ -196,12 +189,6 @@
       background-image: url(../images/background-tablet@2x.webp);
     }
   }
-  //   .container {
-  //     width: 768px;
-  //     padding-left: 32px;
-  //     padding-right: 32px;
-  //   }
-
   .natural {
     font-size: 22px;
     line-height: 1.23;
@@ -259,11 +246,6 @@
       background-image: url(../images/background-desktop@2x.webp);
     }
   }
-  //   .container {
-  //     width: 1200px;
-  //     padding-left: 16px;
-  //     padding-right: 16px;
-  //   }
 
   .natural {
     font-size: 30px;

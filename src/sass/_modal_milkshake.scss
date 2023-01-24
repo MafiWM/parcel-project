@@ -1,26 +1,3 @@
-/* ===================== MODAL_FORM_MILKSHAKES ======================= */
-
-/* ============================================================ */
-// .overlay {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(46, 47, 66, 0.4);
-//   z-index: 100;
-//   visibility: hidden;
-//   opacity: 0;
-//   transition: 0.3s all;
-// }
-
-// .modal.active,
-// .overlay.active {
-//   opacity: 1;
-//   visibility: visible;
-// }
-
-/* ============================================================== */
 .modal_milkshakes {
   position: fixed;
   top: 50%;
@@ -33,7 +10,6 @@
   opacity: 0;
   visibility: hidden;
   z-index: 100;
-
   background-color: var(--bg-white);
   border: 2px solid var(--bg-milkshakes);
 }
@@ -45,16 +21,15 @@
   flex-direction: column;
   align-items: center;
 }
-
 .modal_milkshakes_close {
   position: absolute;
   padding: 0;
   top: 16px;
   right: 16px;
+  cursor: pointer;
   border: none;
   background-color: transparent;
 }
-
 .modal_milkshakes_close_icon {
   fill: var(--text-black);
 }
@@ -65,15 +40,12 @@
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
-
   margin-bottom: 20px;
 }
-
 .modal_foto_milkshakes {
   position: relative;
   margin-bottom: 30px;
 }
-
 .ellipse_milkshakes {
   position: absolute;
   top: 7px;
@@ -83,7 +55,6 @@
   border-radius: 50%;
   box-shadow: 0px 3.26027px 10.726px #f8a676aa;
 }
-
 .milkshakes {
   position: relative;
   width: 132px;
@@ -91,14 +62,12 @@
   border-radius: 50%;
   z-index: 10;
 }
-
 .milkshakes_kpfc {
   position: relative;
   display: flex;
   margin-bottom: 40px;
   gap: 9px;
 }
-
 .foto_milkshakes {
   display: block;
   display: flex;
@@ -110,38 +79,32 @@
   background: #f8a676;
   box-shadow: 0px 3px 20.726px #f8a676aa;
 }
-
 .foto_milkshakes_kcal {
   position: absolute;
   top: 0px;
   left: 6px;
 }
-
 .foto_milkshakes_protein {
   position: absolute;
   top: 0px;
   left: 67px;
 }
-
 .foto_milkshakes_fast {
   position: absolute;
   top: 0px;
   left: 129px;
 }
-
 .foto_milkshakes_cards {
   position: absolute;
   top: 0px;
   left: 191px;
 }
-
 .foto_milkshakes_kpfc {
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 0em;
-
   padding-top: 43px;
   position: relative;
   top: 0;
@@ -153,7 +116,6 @@
   border-radius: 40px;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   .modal_milkshakes {
     width: 568px;
@@ -161,61 +123,48 @@
   .modal_title_milkshakes {
     margin-bottom: 24px;
   }
-
   .modal_foto_milkshakes {
     margin-bottom: 32px;
   }
-
   .ellipse_milkshakes {
     box-shadow: 0px 5.26027px 19.726px #f8a676aa;
   }
-
   .milkshakes_kpfc {
     margin-bottom: 40px;
     gap: 20px;
   }
-
   .foto_milkshakes_kpfc {
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0em;
-
     width: 65px;
     height: 90px;
     padding-top: 63px;
   }
-
   .foto_milkshakes {
     width: 53px;
     height: 53px;
   }
-
   .foto_milkshakes_kcal {
     left: 6px;
   }
-
   .foto_milkshakes_protein {
     left: 91px;
   }
-
   .foto_milkshakes_fast {
     left: 176px;
   }
-
   .foto_milkshakes_cards {
     left: 262px;
   }
 }
-
 /* ===================== MODAL_INGREDIENTS======================= */
-
 .modal_ingredients {
   width: 100%;
   margin-bottom: 40px;
 }
-
 .modal_ingredients_title {
   font-family: Montserrat;
   font-size: 20px;
@@ -223,44 +172,34 @@
   line-height: 28px;
   letter-spacing: 0em;
   text-align: center;
-
   margin-bottom: 24px;
 }
-
 .list-indredients-items {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.04em;
-
   max-width: 248px;
   display: flex;
   justify-content: space-between;
 }
-
 .list-indredients-items:not(:last-child) {
   margin-bottom: 21px;
 }
-
 @media screen and (min-width: 768px) {
   .modal_ingredients {
     margin-bottom: 48px;
   }
-
   .list-indredients-items {
     max-width: 520px;
   }
 }
-
 /* ===================== MODAL_INGREDIENTS======================= */
-
 /* ===================== MODAL_FORM_MILKSHAKES ======================= */
-
 .model_form_milkshakes {
   text-align: center;
 }
-
 .model_form_milkshakes_input {
   outline: none;
   font-family: Montserrat;
@@ -268,7 +207,6 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-
   padding: 11px 10.4px;
   width: 240px;
   height: 42px;
@@ -276,7 +214,6 @@
   margin-bottom: 16px;
   border: 1px solid var(--bg-milkshakes);
 }
-
 .model_form_milkshakes_textarea {
   outline: none;
   font-family: Montserrat;
@@ -284,7 +221,6 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-
   color: var(--text-black);
   resize: none;
   padding: 11px 16px;
@@ -294,22 +230,19 @@
   margin-bottom: 24px;
   border: 1px solid var(--bg-milkshakes);
 }
-
 .model_form_milkshakes_input:focus,
 .model_form_milkshakes_textarea:focus {
   border: 2.5px solid var(--bg-yellow);
 }
-
 .model_form_milkshakes_input:valid {
   border: 1px solid var(--bg-milkshakes);
 }
-
 .model_form_milkshakes_input:not(:placeholder-shown):required:invalid {
-  border-color: rgba(255, 0, 0, 1);
-  color: red;
-  background: url(../images/model_erorr.svg) right 12px center no-repeat #fff;
+  // border-color: rgba(255, 0, 0, 1);
+  // color: red;
+  // background: url(../images/model_erorr.svg) right 12px center no-repeat #fff;
+  background-color: rgba(255, 0, 0, 0.25);
 }
-
 .form_milkshakes_btn_submit {
   outline: none;
   font-family: Montserrat;
@@ -321,21 +254,22 @@
   margin-right: 20px;
 
   padding: 10px 32px;
-  background-color: #f8a676;
+  background-color: var(--bg-yellow);
   border-radius: 10px;
   border: none;
   transition: background-color 250ms linear;
 }
-.form_milkshakes_btn_submit:hover,
-.form_milkshakes_btn_submit:focus {
-  background-color: var(--bg-yellow);
+.form_milkshakes_btn_submit:hover {
+  background-color: var(--hover-focus);
 }
-
+.form_milkshakes_btn_submit:focus {
+  background-color: var(--hover-focus);
+  fill: white;
+}
 @media screen and (min-width: 768px) {
   .model_form_milkshakes {
     max-width: 568px;
   }
-
   .model_form_milkshakes_input {
     padding: 11px 16px;
     width: 368px;
@@ -345,5 +279,4 @@
     margin-bottom: 32px;
   }
 }
-
 /* ===================== MODAL_FORM_MILKSHAKES ======================= */
