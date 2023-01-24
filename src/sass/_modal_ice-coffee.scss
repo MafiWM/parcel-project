@@ -72,12 +72,12 @@ img {
 }
 
 .modal_ice-coffee::-webkit-scrollbar-thumb{
-  background: #f8a676;
+  background: var(--bg-lightyellow);
   border-radius: 8px;
 }
 
 .modal_ice-coffee::-webkit-scrollbar-thumb:hover{
-  background: #d7936d;
+  background: var(--bg-yellow);
 }
 
 .modal_conteiner {
@@ -206,7 +206,6 @@ img {
   .modal_ice-coffee {
     width: 568px;
   }
-
   .modal_ice-coffee::-webkit-scrollbar{
     width: 5px;
   }
