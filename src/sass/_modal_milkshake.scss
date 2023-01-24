@@ -70,12 +70,12 @@ img {
 }
 
 .modal_milkshakes::-webkit-scrollbar-thumb{
-  background: var(--bg-lightyellow);
+  background: var(--bg-milkshakes);
   border-radius: 8px;
 }
 
 .modal_milkshakes::-webkit-scrollbar-thumb:hover{
-  background: var(--bg-yellow);
+  background: #d27645;
 }
 
 .modal_conteiner {
