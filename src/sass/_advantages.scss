@@ -14,6 +14,21 @@
 .advantages-item {
   width: 230px;
 }
+
+.advantages-item.active {
+  animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(60deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-60deg);
+  }
+}
+
 .advantages-item-icon {
   position: relative;
   width: 50px;
