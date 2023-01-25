@@ -59,9 +59,9 @@
     background-color var(--transition-type);
 }
 
-// .close-btn:hover{
-//   background-color: var();
-// }
+.close-btn:hover{
+  fill: var(--hover-focus);
+}
 
 /*===== checkbox =============*/
 .checkbox {
@@ -230,6 +230,7 @@
   padding: 8px 12px;
   width: 100%;
   background: rgba(248, 210, 78, 0.1);
+  outline: none;
   border: 1px solid #84a178;
   border-radius: 10px;
   font-family: 'Montserra', sans-serif;
@@ -250,6 +251,10 @@
   background-color: rgba(255, 0, 0, 0.25);
 }
 
+.modal-input:focus {
+    border: 1px solid var(--hover-focus);
+}
+
 .modal-buynow-btn {
   display: block;
   padding: 12px 34px;
@@ -262,10 +267,19 @@
   font-size: 12px;
   line-height: 1.25;
   color: var(--text-black);
-
+  cursor: var(--cursor-spoon);
   background: var(--bg-yellow);
   border-radius: 10px;
   border: none;
+}
+
+.modal-buynow-btn:hover,
+.modal-buynow-btn:focus,
+.modal-buynow-btn:active {
+    background-color: var(--hover-focus);
+}
+.modal-buynow-btn:focus {
+    color: var(--text-white-color);
 }
 
 /*  tablet   */
