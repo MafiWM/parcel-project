@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
-       bodyMenu = document.querySelector('.js-body-menu');
-       scrollUp = document.querySelector('.js-scroll-menu');
+       bodyMenu     = document.querySelector('.js-body-menu');
+       scrollUp     = document.querySelector('.js-scroll-menu');
 
    /* Перебираем массив кнопок */
    modalButtons.forEach(function(item){
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       item.addEventListener('click', function(e) {
          var parentModal = this.closest('.modal');
-
+        
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
          bodyMenu.classList.remove('active');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (key == 27) {
 
-            document.querySelector('.modal.active').classList.remove('active');
+            document.querySelector('.modal.active').classList.remove('active');        
             document.querySelector('.overlay').classList.remove('active');
         };
     }, false);
@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('.js-scroll-menu.active').classList.remove('active');
+        document.querySelector('.js-body-menu.active').classList.remove('active');
         this.classList.remove('active');
     });
 

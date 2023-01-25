@@ -21,10 +21,6 @@
     display: none;
 }
 
-.top-scroll:hover {
-    box-shadow: 0 0 15 5 #0a8817;
-}
-
 .top-scroll.show {
 transform: translateX(0);
 }
@@ -189,6 +185,10 @@ transform: translateX(0);
         width: 50px;
         height: 50px;
         background-size: 38px;
+        }
+
+        .top-scroll:hover {
+        box-shadow: 0 0 15 4 #0a8817;
         }
 
     .hero_section {
@@ -413,4 +413,24 @@ transform: translateX(0);
     animation-duration: 4000ms;
     animation-timing-function: cubic-bezier(.46, .13, .33, 1.02);
     animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        // transform: scale(1.01);
+        transform: perspective(1000px) rotatey(-7deg);
+    }
+    50% {
+        transform: scale(1.06);
+        transform: perspective(1000px) rotatey(-1deg);
+     }
+    100% {
+        // transform: scale(1.01);
+        transform: perspective(1000px) rotateY(-7deg);
+    }
+}
+
+.hero-ice-cream:hover {
+    transform-origin: bottom center;
+    animation: shake 380ms linear 4;
 }
