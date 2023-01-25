@@ -1,296 +1,297 @@
 /* --------- HERO -------- */
 
 .top-scroll {
-    transform: translateY(100px);
-    position: fixed;
-    z-index: 99;
-    right: 5%;
-    bottom: 3%;
-    width: 35px;
-    height: 35px;
-    box-shadow: 0 0 15 3 var(--bg-milkshakes);
-    border-radius: 50%;
-    background-image: url(../images/uptotop.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 28px;   
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100px);
+  position: fixed;
+  z-index: 99;
+  right: 5%;
+  bottom: 3%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 15 3 #d6936d;
+  border-radius: 50%;
+  background-image: url(../images/uptotop.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-scroll.active {
-    display: none;
+  display: none;
 }
 
 .top-scroll.show {
-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .hero_section {
-    background-color: var(--bg-section);
+  background-color: var(--bg-section);
 }
 
 @media screen and (max-width: 479px) {
-    .hero_section {
-        padding-top: 38px;
-        padding-bottom: 236px;
+  .hero_section {
+    padding-top: 38px;
+    padding-bottom: 236px;
 
-        background-image: url(../images/hero-dots-mobile320.png);
-        background-repeat: no-repeat;
-        background-position: right bottom;
-    }
+    background-image: url(../images/hero-dots-mobile320.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
 
-    @media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
     (min-resolution: 192dpi) and (max-width: 479px),
     (min-resolution: 2dppx) and (max-width: 479px) {
-        .hero_section {
-            background-image: url(../images/hero-dots-mobile320@2x.png);
-            background-size: 320px 50px;
-        }
+    .hero_section {
+      background-image: url(../images/hero-dots-mobile320@2x.png);
+      background-size: 320px 50px;
     }
+  }
 }
 
 .hero-container {
-    position: relative;
+  position: relative;
 }
 
 .hero-title-wrap {
-    width: 247px;
-    height: 167px;
+  width: 247px;
+  height: 167px;
 }
 
 .hero-title {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    font-family: "Seymour One";
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.27;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: var(--tetx-white);
+  color: var(--tetx-white);
 }
 
 .passion {
-    font-size: 34px;
-    line-height: 0.97;
-    letter-spacing: 0;
+  font-size: 34px;
+  line-height: 0.97;
+  letter-spacing: 0;
 }
 
 .hero-menu {
-    display: flex;
-    column-gap: 12px;
+  display: flex;
+  column-gap: 12px;
 }
 
 .hero-menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.25;
 }
 
 .hero-menu-link {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    text-align: center;
-    width: 108px;
-    height: 38px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  width: 108px;
+  height: 38px;
 
-    color: var(--text-black);
+  color: var(--text-black);
 }
 
 .hero-menu-link.made {
-    padding: 11px 6px;
-    text-decoration: underline;
-    color: var(--bg-yellow);
+  padding: 11px 6px;
+  text-decoration: underline;
+  color: var(--bg-yellow);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-menu-link.hero-products {
-    padding: 11px 26px;
-    border: 2px solid var(--bg-yellow);
-    border-radius: 8px;
+  padding: 11px 26px;
+  border: 2px solid var(--bg-yellow);
+  border-radius: 8px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-menu-link.hero-products:hover {
-    border: 2px solid var(--hover-focus);
+  border: 2px solid var(--hover-focus);
 }
 
 .hero-menu-link.made:hover {
-    color: var(--hover-focus);
+  color: var(--hover-focus);
 }
 
 .hero-menu-link.made:focus {
-    color: var(--tetx-white);
+  color: var(--tetx-white);
 }
 
 @media screen and (max-width: 767px) {
-
-    .hero-text,
-    .quantity-wrap,
-    .ice_cream_plate-wrap,
-    .hero-description-link {
-        display: none;
-    }
+  .hero-text,
+  .quantity-wrap,
+  .ice_cream_plate-wrap,
+  .hero-description-link {
+    display: none;
+  }
 }
 
 .hero-ice-cream {
-    position: absolute;
-    width: 177px;
-    height: 217px;
+  position: absolute;
+  width: 177px;
+  height: 217px;
 
-    right: 60px;
-    bottom: -236px;
+  right: 60px;
+  bottom: -236px;
 }
 
 @media screen and (min-width: 480px) {
-    .hero_section {
-        padding-top: 26px;
-    }
+  .hero_section {
+    padding-top: 26px;
+  }
 
-    .hero-container {
-        width: 480px;
-        height: 317px;
+  .hero-container {
+    width: 480px;
+    height: 317px;
 
-        background-image: url(../images/hero-dots-mobile480.png);
-        background-repeat: no-repeat;
-        background-position: right bottom;
-    }
+    background-image: url(../images/hero-dots-mobile480.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
     (min-resolution: 192dpi) and (min-width: 480px),
     (min-resolution: 2dppx) and (min-width: 480px) {
-        .hero-container {
-            background-image: url(../images/hero-dots-mobile480@2x.png);
-            background-size: 330px 52px;
-        }
+    .hero-container {
+      background-image: url(../images/hero-dots-mobile480@2x.png);
+      background-size: 330px 52px;
     }
+  }
 
-    .hero-ice-cream {
-        width: 218px;
-        height: 267px;
+  .hero-ice-cream {
+    width: 218px;
+    height: 267px;
 
-        right: 20px;
-        bottom: 0;
-    }
+    right: 20px;
+    bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .top-scroll {
+    width: 50px;
+    height: 50px;
+    background-size: 38px;
+  }
 
-    .top-scroll {
-        width: 50px;
-        height: 50px;
-        background-size: 38px;
-        }
+  .top-scroll:hover {
+    box-shadow: 0 0 15 4 #0a8817;
+  }
 
-        .top-scroll:hover {
-        box-shadow: 0 0 15 4 #0a8817;
-        }
+  .hero_section {
+    padding-top: 14px;
+  }
 
-    .hero_section {
-        padding-top: 14px;
-    }
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    width: 768px;
+    height: 335px;
 
-    .hero-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: start;
-        width: 768px;
-        height: 335px;
+    background-image: url(../images/hero-dots-tablet.png);
+  }
 
-        background-image: url(../images/hero-dots-tablet.png);
-    }
-
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
-        .hero-container {
-            background-image: url(../images/hero-dots-tablet@2x.png);
-            background-size: 768px 68px;
-        }
+    .hero-container {
+      background-image: url(../images/hero-dots-tablet@2x.png);
+      background-size: 768px 68px;
     }
+  }
 
-    .hero-title-wrap {
-        height: 159px;
-        margin-right: 411px;
-        margin-bottom: 12px;
-    }
+  .hero-title-wrap {
+    height: 159px;
+    margin-right: 411px;
+    margin-bottom: 12px;
+  }
 
-    .hero-title {
-        margin-bottom: 24px;
-    }
+  .hero-title {
+    margin-bottom: 24px;
+  }
 
-    .hero-text {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.42;
-        color: var(--tetx-white);
-    }
+  .hero-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.42;
+    color: var(--tetx-white);
+  }
 
-    .quantity-wrap {
-        width: 46px;
-        height: 116px;
-        padding-top: 14px;
-    }
+  .quantity-wrap {
+    width: 46px;
+    height: 116px;
+    padding-top: 14px;
+  }
 
-    .quantity-number {
-        font-weight: 900;
-        font-size: 28px;
-        line-height: 1.21;
-        text-align: right;
-        letter-spacing: 0.04em;
-    }
+  .quantity-number {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+  }
 
-    .quantity-wrap .hero-text {
-        font-size: 8px;
-        line-height: 1.25;
-        text-align: right;
-    }
+  .quantity-wrap .hero-text {
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+  }
 
-    .quantity-trucks {
-        margin-top: 20px;
-    }
+  .quantity-trucks {
+    margin-top: 20px;
+  }
 
-    .ice_cream_plate-wrap {
-        width: 152px;
-        height: 152px;
-        margin-right: 32px;
-    }
+  .ice_cream_plate-wrap {
+    width: 152px;
+    height: 152px;
+    margin-right: 32px;
+  }
 
-    .hero-description-text {
-        width: 139px;
-        padding-top: 27px;
-    }
+  .hero-description-text {
+    width: 139px;
+    padding-top: 27px;
+  }
 
-    .hero-description-wrap {
-        display: flex;
-        flex-direction: column;
-    }
+  .hero-description-wrap {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .hero-description-link {
-        width: 40px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        line-height: 0;
-    }
+  .hero-description-link {
+    width: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 0;
+  }
 
-    .hero-arrow {
-        fill: var(--tetx-white);
+  .hero-arrow {
+    fill: var(--tetx-white);
 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1),;
-    }
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    .hero-description-link:hover .hero-arrow,
-    .hero-description-link:focus .hero-arrow {
-        fill: var(--hover-focus);
-        transform: rotate(90deg);
-    }
+  .hero-description-link:hover .hero-arrow,
+  .hero-description-link:focus .hero-arrow {
+    fill: var(--hover-focus);
+    transform: rotate(90deg);
+  }
 
-    /* .hero-description-text::after {
+  /* .hero-description-text::after {
     content: "";
     display: block;
     margin-top: 12px;
@@ -299,138 +300,138 @@ transform: translateX(0);
     background-image: url(/images/icons/icon-arrow.svg);
   } */
 
-    .hero-ice-cream {
-        width: 268px;
-        height: 329px;
+  .hero-ice-cream {
+    width: 268px;
+    height: 329px;
 
-        right: 92px;
-    }
+    right: 92px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero_section {
-        padding-top: 37px;
-    }
+  .hero_section {
+    padding-top: 37px;
+  }
 
-    .hero-container {
-        width: 1200px;
-        height: 546px;
+  .hero-container {
+    width: 1200px;
+    height: 546px;
 
-        background-image: url(../images/hero-dots-desktop.png);
-    }
+    background-image: url(../images/hero-dots-desktop.png);
+  }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     (min-resolution: 192dpi) and (min-width: 1200px),
     (min-resolution: 2dppx) and (min-width: 1200px) {
-        .hero-container {
-            background-image: url(../images/hero-dots-desktop@2x.png);
-            background-size: 1200px 384px;
-        }
+    .hero-container {
+      background-image: url(../images/hero-dots-desktop@2x.png);
+      background-size: 1200px 384px;
     }
+  }
 
-    .hero-title {
-        margin-bottom: 28px;
-        font-size: 38px;
-        line-height: 1.26;
-    }
+  .hero-title {
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
 
-    .hero-title-wrap {
-        width: 367px;
-        height: 214px;
-        margin-right: 722px;
-        margin-bottom: 42px;
-    }
+  .hero-title-wrap {
+    width: 367px;
+    height: 214px;
+    margin-right: 722px;
+    margin-bottom: 42px;
+  }
 
-    .hero-menu-link {
-        width: 134px;
-        height: 42px;
-        font-size: 14px;
-        line-height: 1.29;
-    }
+  .hero-menu-link {
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
 
-    .hero-menu-link.hero-products:focus {
-        color:var(--tetx-white);
-        border: 2px solid var(--hover-focus);
-        outline: none;
-    }
+  .hero-menu-link.hero-products:focus {
+    color: var(--tetx-white);
+    border: 2px solid var(--hover-focus);
+    outline: none;
+  }
 
-    .quantity-wrap {
-        padding-top: 8px;
-        width: 79px;
-        height: 170px;
-    }
+  .quantity-wrap {
+    padding-top: 8px;
+    width: 79px;
+    height: 170px;
+  }
 
-    .quantity-number {
-        font-size: 46px;
-        line-height: 1.22;
-    }
+  .quantity-number {
+    font-size: 46px;
+    line-height: 1.22;
+  }
 
-    .quantity-wrap .hero-text {
-        font-size: 14px;
-        line-height: 1.21;
-    }
+  .quantity-wrap .hero-text {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 
-    .quantity-trucks {
-        margin-top: 16px;
-    }
+  .quantity-trucks {
+    margin-top: 16px;
+  }
 
-    .ice_cream_plate-wrap {
-        width: 225px;
-        height: 225px;
-        margin-right: 16px;
-    }
+  .ice_cream_plate-wrap {
+    width: 225px;
+    height: 225px;
+    margin-right: 16px;
+  }
 
-    .hero-description-text {
-        width: 200px;
-        padding-top: 67px;
-        font-size: 14px;
-        line-height: 1.43;
-    }
+  .hero-description-text {
+    width: 200px;
+    padding-top: 67px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
 
-    .hero-description-link {
-        padding-top: 24px;
-        padding-bottom: 12px;
-    }
+  .hero-description-link {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
 
-    .hero-ice-cream {
-        width: 456px;
-        height: 560px;
-    }
+  .hero-ice-cream {
+    width: 456px;
+    height: 560px;
+  }
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .ice_cream_plate-wrap {
-    animation-name: rotation;
-    animation-duration: 4000ms;
-    animation-timing-function: cubic-bezier(.46, .13, .33, 1.02);
-    animation-iteration-count: infinite;
+  animation-name: rotation;
+  animation-duration: 4000ms;
+  animation-timing-function: cubic-bezier(0.46, 0.13, 0.33, 1.02);
+  animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-    0% {
-        // transform: scale(1.01);
-        transform: perspective(1000px) rotatey(-7deg);
-    }
-    50% {
-        transform: scale(1.06);
-        transform: perspective(1000px) rotatey(-1deg);
-     }
-    100% {
-        // transform: scale(1.01);
-        transform: perspective(1000px) rotateY(-7deg);
-    }
+  0% {
+    // transform: scale(1.01);
+    transform: perspective(1000px) rotatey(-7deg);
+  }
+  50% {
+    transform: scale(1.06);
+    transform: perspective(1000px) rotatey(-1deg);
+  }
+  100% {
+    // transform: scale(1.01);
+    transform: perspective(1000px) rotateY(-7deg);
+  }
 }
 
 .hero-ice-cream:hover {
-    transform-origin: bottom center;
-    animation: shake 380ms linear 4;
+  transform-origin: bottom center;
+  animation: shake 380ms linear 4;
 }
